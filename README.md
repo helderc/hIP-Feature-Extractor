@@ -1,2 +1,3 @@
-# hIP-Feature-Extractor
-This is a feature extractor based on my hIP software
+# hIP Feature Extractor
+
+This software is a feature extractor based on my other software called 'hIP'
