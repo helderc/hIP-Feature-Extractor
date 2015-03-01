@@ -42,9 +42,29 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    ocr = new OCR(this);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::on_actionClear_log_triggered()
+{
+    ui->txtLog->clear();
+}
+
+void MainWindow::on_actionSave_log_triggered()
+{
+    QString fileName = QFileDialog::getSaveFileName(this,
+                                                    tr("Save log"),
+                                                    "",
+                                                    "Text file (*.txt)");
+
+    if (!(fileName.isNull())) {
+        QTextDocumentWriter writer(fileName);
+        writer.write(ui->txtLog->document());
+    }
 }

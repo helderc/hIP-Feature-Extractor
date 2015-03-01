@@ -38,6 +38,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QFileDialog>
+#include <QTextDocumentWriter>
+#include <QTextCodec>
+
+#include "ocr.h"
 
 namespace Ui {
 class MainWindow;
@@ -51,8 +56,14 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void on_actionClear_log_triggered();
+
+    void on_actionSave_log_triggered();
+
 private:
     Ui::MainWindow *ui;
+    OCR *ocr;
 };
 
 #endif // MAINWINDOW_H
