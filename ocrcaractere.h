@@ -38,8 +38,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <QVector>
 #include <QImage>
 
-#include "classificadores.h"
-
 class OCRCaractere : public QObject
 {
     Q_OBJECT

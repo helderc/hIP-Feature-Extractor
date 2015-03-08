@@ -14,12 +14,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    classificadores.cpp \
     ocr.cpp \
     ocrcaractere.cpp
 
 HEADERS  += mainwindow.h \
-    classificadores.h \
     ocr.h \
     ocrcaractere.h
 

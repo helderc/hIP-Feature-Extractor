@@ -41,8 +41,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <QtCore/qmath.h>
 #include <cmath>
 
-//#include "thinning.h"
-#include "classificadores.h"
 #include "ocrcaractere.h"
 
 class OCR : public QObject
